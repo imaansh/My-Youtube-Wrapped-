@@ -1,0 +1,28 @@
+# --- dbt + DuckDB + Python project ---
+
+# Ignore DuckDB database files
+*.duckdb
+*.duckdb.wal
+
+# Ignore dbt target/compiled logs
+target/
+dbt_packages/
+logs/
+
+# Ignore Python virtual environments
+.venv/
+env/
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db

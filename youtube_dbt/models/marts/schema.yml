@@ -1,0 +1,115 @@
+version: 2
+
+models:
+  - name: watch_history_fct
+    description: "Fact table containing video views with date and foreign keys to channel and video dimensions"
+    columns:
+      - name: video_id
+        description: "Foreign key to dim_videos"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('video_dim')
+              field: video_id
+
+      - name: channel_id
+        description: "Foreign key to dim_channels"
+        tests:
+          - relationships:
+              to: ref('channel_dim')
+              field: channel_id
+
+      - name: watch_hour
+        description: "time when the video was watched"
+        tests:
+          - not_null
+
+      - name: date_
+        description: "Date when the video was watched"
+        tests:
+          - not_null
+
+##Channel Dim
+  - name: channel_dim
+    description: "Dimension table containing channel name"
+    columns:
+      - name: channel_id
+        description: "Primary key for channel_dim"
+        tests:
+          - unique
+          - not_null
+
+
+      - name: channel_name
+        description: "Name of the channel"
+
+##Video dim
+  - name: video_dim
+    description: "Dimension table containing video name"
+    columns:
+      - name: video_id
+        description: "Primary key for video_dim"
+        tests:
+          - unique
+          - not_null
+
+
+      - name: video_title
+        description: "Name of the video"
+
+##Subscription Dim
+
+  - name: subscriptions_dim
+    description: "Dimension table containing subscribed channels"
+    columns:
+      - name: channel_id
+        description: "Primary key for subscriptions_dim"
+        tests:
+          - unique
+          - not_null
+
+
+      - name: subscribed_channel
+        description: "Name of the subscribed channel"
+
+##Video mart
+
+  - name: video_mart
+    description: "Mart implementing rank against videos by number of times watched"
+    columns:
+      - name: video_id
+        description: "Primary key for video_mart"
+        tests:
+          - not_null
+
+
+      - name: video_title
+        description: "Name of the video"
+
+      - name: no_of_times_watched
+        description: "Times the video was watched"
+
+      - name: rank
+        description: "ranked by number of times watched"
+
+
+
+##channels mart
+
+  - name: channels_mart
+    description: "Mart implementing rank against channels by number of times watched"
+    columns:
+      - name: channel_id
+        description: "Primary key for channels_mart"
+        tests:
+          - not_null
+
+
+      - name: channel_name
+        description: "Name of the channel"
+
+      - name: no_of_times_watched
+        description: "Times the video was watched of that channel"
+
+      - name: rank
+        description: "ranked by number of times watched"

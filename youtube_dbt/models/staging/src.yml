@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: youtube
+    schema: main
+    tables:
+      - name: watch_history   # exact table name in DuckDB
+      - name: subscriptions   # exact table name in DuckDB
