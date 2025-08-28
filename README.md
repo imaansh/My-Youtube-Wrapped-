@@ -29,6 +29,7 @@ The result: a personal analytics dashboard showing my top creators, most-watched
 --- 
 
 ## 📂 Project Structure
+
 My-Youtube-Wrapped/
 ├── dbt_project/                # dbt models, seeds, snapshots
 │   ├── models/
@@ -45,8 +46,7 @@ My-Youtube-Wrapped/
 ---
 
 ## 🌐 DAG
-*(Add your DAG image/graph here once ready, e.g. from dbt docs)*  
-Example placeholder:
+I created a star schema with one fact table (watch history) and 4 dimensions. DAG is below:
 
 <img width="1784" height="966" alt="image" src="https://github.com/user-attachments/assets/b5346b74-d38a-4535-8161-a979f7654534" />
 
