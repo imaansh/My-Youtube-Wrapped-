@@ -53,8 +53,9 @@ Example placeholder:
 
 ---
 
-## 📊 Tableau Dashboard [![View Dashboard](https://img.shields.io/badge/View-Dashboard-blue?style=for-the-badge&logo=tableau)]([https://public.tableau.com/app/profile/imaan.shahid5731/viz/YoutubeWrapped/Dashboard1](https://public.tableau.com/app/profile/imaan.shahid5731/viz/YoutubeWrapped/Dashboard1)) 
-The dashboard is built in Tableau and connected to DuckDB via **JDBC**.  
+## 📊 Tableau Dashboard
+
+The dashboard is built in Tableau and connected to DuckDB via **JDBC**.  [![View Dashboard](https://img.shields.io/badge/View-Dashboard-blue?style=for-the-badge&logo=tableau)](https://public.tableau.com/app/profile/imaan.shahid5731/viz/YoutubeWrapped/Dashboard1)  
 It showcases:
 - Wrapped-style highlights  
 - Trends across months and days  
