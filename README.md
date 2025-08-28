@@ -30,15 +30,16 @@ The result: a personal analytics dashboard showing my top creators, most-watched
 
 ## 📂 Project Structure
 My-Youtube-Wrapped/
-├── dbt_project/ # dbt models, seeds, snapshots
-│ ├── models/
-│ ├── snapshots/
-│ └── seeds/
-│
-├── dashboards/ # Tableau dashboards (JDBC connection to DuckDB)
-│ └── youtube_wrapped.twb # Tableau workbook
-├── load.py # Python script to load raw YouTube data into DuckDB
-└── README.md # Project documentation
+├── dbt_project/                # dbt models, seeds, snapshots
+│   ├── models/
+│   ├── snapshots/
+│   └── seeds/
+├── dashboards/                 # Tableau dashboards (JDBC connection to DuckDB)
+│   └── youtube_wrapped.twb     # Tableau workbook
+├── load.py                     # Python script to load raw YouTube data into DuckDB
+├── youtube_history.duckdb      # Local DuckDB database file
+└── README.md                   # Project documentation
+
 
 
 ---
