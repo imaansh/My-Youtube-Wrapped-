@@ -34,12 +34,11 @@ My-Youtube-Wrapped/
 │ ├── models/
 │ ├── snapshots/
 │ └── seeds/
+│
 ├── dashboards/ # Tableau dashboards (JDBC connection to DuckDB)
 │ └── youtube_wrapped.twb # Tableau workbook
 ├── load.py # Python script to load raw YouTube data into DuckDB
-├── youtube_history.duckdb # Local DuckDB database file
 └── README.md # Project documentation
-
 
 
 ---
