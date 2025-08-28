@@ -26,23 +26,6 @@ The result: a personal analytics dashboard showing my top creators, most-watched
 - **Tableau (via JDBC)** → Dashboarding & visual storytelling.  
 - **GitHub** → Version control and project sharing.  
 
---- 
-
-## 📂 Project Structure
-
-My-Youtube-Wrapped/
-├── dbt_project/                # dbt models, seeds, snapshots
-│   ├── models/
-│   ├── snapshots/
-│   └── seeds/
-├── dashboards/                 # Tableau dashboards (JDBC connection to DuckDB)
-│   └── youtube_wrapped.twb     # Tableau workbook
-├── load.py                     # Python script to load raw YouTube data into DuckDB
-├── youtube_history.duckdb      # Local DuckDB database file
-└── README.md                   # Project documentation
-
-
-
 ---
 
 ## 🌐 DAG
@@ -70,9 +53,3 @@ It showcases:
 - Add more advanced analytics (watch time, categories, etc.)  
 - Deploy dbt models in a cloud data warehouse  
 - Enhance interactivity of dashboard with filters  
-
----
-
-## 🤝 Contributing
-Pull requests and suggestions are welcome!  
-Feel free to fork this repo and submit a PR to add features, improve queries, or enhance the dashboard design.  
