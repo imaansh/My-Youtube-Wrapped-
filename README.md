@@ -53,7 +53,7 @@ Example placeholder:
 
 ---
 
-## 📊 Tableau Dashboard [![View Dashboard](https://img.shields.io/badge/View-Dashboard-blue?style=for-the-badge&logo=tableau)]([https://public.tableau.com/app/profile/your-username/viz/your-dashboard-link](https://public.tableau.com/app/profile/imaan.shahid5731/viz/YoutubeWrapped/Dashboard1)) 
+## 📊 Tableau Dashboard [![View Dashboard](https://img.shields.io/badge/View-Dashboard-blue?style=for-the-badge&logo=tableau)]([https://public.tableau.com/app/profile/imaan.shahid5731/viz/YoutubeWrapped/Dashboard1](https://public.tableau.com/app/profile/imaan.shahid5731/viz/YoutubeWrapped/Dashboard1)) 
 The dashboard is built in Tableau and connected to DuckDB via **JDBC**.  
 It showcases:
 - Wrapped-style highlights  
